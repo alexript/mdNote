@@ -6,10 +6,12 @@
 	],
 	"settings": {
 		"files.exclude": {
+			".git*": true,
 			"**/bin": true,
 			"**/obj": true,
 			"dotnet.cmd": true,
-			"mdNote.*": true
+			"mdNote.*": true,
+			"release.cmd": true
 		}
 	}
 }
