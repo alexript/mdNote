@@ -5,12 +5,17 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Logging.Serilog;
 using mdNodeConfig;
 
+
 namespace mdNote
 {
     class Program
     {
+        private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
+
+
         public static void Main(string[] args)
         {
+            Logger.Info("Hello world");
             Config cfg = new Config();
             BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
         }
