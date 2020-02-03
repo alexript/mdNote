@@ -11,7 +11,7 @@ namespace mdNodeConfig
         {
 
             var parser = new FileIniDataParser();
-            IniData data = parser.ReadFile(".mdNode.ini");
+            IniData data = parser.ReadFile(".mdNote.ini");
         }
     }
 }
