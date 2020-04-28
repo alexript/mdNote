@@ -1,3 +1,6 @@
+# docker build -t mdnote .
+# docker run --rm mdnote 
+
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
 
